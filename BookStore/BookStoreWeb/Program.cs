@@ -19,6 +19,23 @@ class Program
         app.MapGet("/api/books", async (BookContext db) => await db.Books.ToListAsync());
 
         app.MapGet("/api/booksAuthor", async (BookContext db) => await db.Books.OrderBy(b => b.Author).ToListAsync());
+
+
+        app.MapGet("/api/booksAuthor/{ask}", async (string ask, BookContext db) => 
+        {
+            if(ask == "ask")
+            {
+                var books = await db.Books.OrderBy(b => b.Author).ToListAsync();
+                return Results.Json(books);
+            }
+            else
+            {
+                var books = await db.Books.OrderByDescending(b => b.Author).ToListAsync();
+                return Results.Json(books);
+            }
+        });
+
+
         app.MapGet("/api/booksTitle", async (BookContext db) => await db.Books.OrderBy(b => b.Title).ToListAsync());
         app.MapGet("/api/booksDate", async (BookContext db) => await db.Books.OrderBy(b => b.Date).ToListAsync());
 

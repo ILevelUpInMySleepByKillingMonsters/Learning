@@ -19,7 +19,7 @@
         <thead>
             <tr>
                 <th>
-                    <button id="sortByAuthor">Автор</button>
+                    <button id="sortByAuthor" value="ask">Автор</button>
                 </th>
                 <th>
                     <button id="sortByTitle">Название</button>
@@ -57,6 +57,39 @@
                 const rows = document.querySelector("tbody");
                 books.forEach(book => rows.append(row(book)));
             }
+        }
+
+        async function getBooksByAuthorAsk() {
+            var value = document.getElementById("sortByAuthor").value;
+            const response = await fetch(`/api/booksAuthor/${value}`, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                removeAllChildren();
+                const books = await response.json();
+                const rows = document.querySelector("tbody");
+                books.forEach(book => rows.append(row(book)));
+            }
+            if (value == "ask") {
+                document.getElementById("sortByAuthor").value = "desk";
+                return;
+            }
+            else {
+                document.getElementById("sortByAuthor").value = "ask";
+                return;
+            }
+
+            //const response = await fetch(`/api/booksAuthor/${ask}`, {
+            //    method: "GET",
+            //    headers: { "Accept": "application/json" }
+            //});
+            //if (response.ok === true) {
+            //    removeAllChildren();
+            //    const books = await response.json();
+            //    const rows = document.querySelector("tbody");
+            //    books.forEach(book => rows.append(row(book)));
+            //}
         }
 
         async function getBooksByAuthor() {
@@ -136,7 +169,7 @@
             parentElement.innerHTML = '';
         }
 
-        document.getElementById("sortByAuthor").addEventListener("click", () => getBooksByAuthor());
+        document.getElementById("sortByAuthor").addEventListener("click", () => getBooksByAuthorAsk());
         document.getElementById("sortByTitle").addEventListener("click", () => getBooksByTitle());
         document.getElementById("sortByDate").addEventListener("click", () => getBooksByDate());
 

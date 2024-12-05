@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{C843BA00-DD0D-4996-915C-11F6B1501513}|BookStoreWeb\\BookStoreWeb.csproj|solutionrelative:bookstoreweb\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C843BA00-DD0D-4996-915C-11F6B1501513}|BookStoreWeb\\BookStoreWeb.csproj|c:\\users\\dihey\\source\\repos\\vlad\\learning\\bookstore\\bookstoreweb\\bookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C843BA00-DD0D-4996-915C-11F6B1501513}|BookStoreWeb\\BookStoreWeb.csproj|solutionrelative:bookstoreweb\\bookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C843BA00-DD0D-4996-915C-11F6B1501513}|BookStoreWeb\\BookStoreWeb.csproj|c:\\users\\dihey\\source\\repos\\vlad\\learning\\bookstore\\bookstoreweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C843BA00-DD0D-4996-915C-11F6B1501513}|BookStoreWeb\\BookStoreWeb.csproj|solutionrelative:bookstoreweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA65971B-889D-4B2A-87DE-BF9C574CF255}|BookStore\\BookStore.csproj|c:\\users\\dihey\\source\\repos\\vlad\\learning\\bookstore\\bookstore\\bookoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA65971B-889D-4B2A-87DE-BF9C574CF255}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\bookoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +22,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookOperation.cs",
-              "DocumentMoniker": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStore\\BookOperation.cs",
-              "RelativeDocumentMoniker": "BookStore\\BookOperation.cs",
-              "ToolTip": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStore\\BookOperation.cs",
-              "RelativeToolTip": "BookStore\\BookOperation.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\Program.cs",
+              "RelativeDocumentMoniker": "BookStoreWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\Program.cs",
+              "RelativeToolTip": "BookStoreWeb\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T09:38:08.159Z",
+              "WhenOpened": "2024-12-05T10:23:29.6Z",
               "EditorCaption": ""
             },
             {
@@ -49,35 +41,9 @@
               "RelativeDocumentMoniker": "BookStoreWeb\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\wwwroot\\index.html",
               "RelativeToolTip": "BookStoreWeb\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwEMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-05T08:45:12.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookContext.cs",
-              "DocumentMoniker": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\BookContext.cs",
-              "RelativeDocumentMoniker": "BookStoreWeb\\BookContext.cs",
-              "ToolTip": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\BookContext.cs",
-              "RelativeToolTip": "BookStoreWeb\\BookContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T08:40:13.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\Program.cs",
-              "RelativeDocumentMoniker": "BookStoreWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\Program.cs",
-              "RelativeToolTip": "BookStoreWeb\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T08:39:59.248Z",
+              "WhenOpened": "2024-12-05T10:13:00.821Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GMZL3sNcMpDRMdoGSnGARG6UKMG+/Ob2ugl5FtOp+jk=",
+  "Hash": "ESBOl9+P4iU6vV8C5Lub0/fhbFq7lJUarfmN2k/6Png=",
   "Source": "BookStoreWeb",
   "BasePath": "_content/BookStoreWeb",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ykv21gdy5",
-      "Integrity": "zaF0exCT+A5DaPmPbnf+n9fQLxc5MTAH61eA57U8RNc=",
+      "Fingerprint": "c0vheqonwf",
+      "Integrity": "xJKaiOdeuN21Un38GM+nux43N3FeyCGksf7MCSlhbbg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -1670,7 +1670,7 @@
       ]
     },
     {
-      "Route": "index.5ykv21gdy5.html",
+      "Route": "index.c0vheqonwf.html",
       "AssetFile": "C:\\Users\\dihey\\source\\repos\\Vlad\\Learning\\BookStore\\BookStoreWeb\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1680,7 +1680,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4887"
+          "Value": "6247"
         },
         {
           "Name": "Content-Type",
@@ -1688,11 +1688,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zaF0exCT+A5DaPmPbnf+n9fQLxc5MTAH61eA57U8RNc=\""
+          "Value": "\"xJKaiOdeuN21Un38GM+nux43N3FeyCGksf7MCSlhbbg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 10:09:18 GMT"
+          "Value": "Thu, 05 Dec 2024 10:53:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1702,7 +1702,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5ykv21gdy5"
+          "Value": "c0vheqonwf"
         },
         {
           "Name": "label",
@@ -1710,7 +1710,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zaF0exCT+A5DaPmPbnf+n9fQLxc5MTAH61eA57U8RNc="
+          "Value": "sha256-xJKaiOdeuN21Un38GM+nux43N3FeyCGksf7MCSlhbbg="
         }
       ]
     },
@@ -1725,7 +1725,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4887"
+          "Value": "6247"
         },
         {
           "Name": "Content-Type",
@@ -1733,11 +1733,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zaF0exCT+A5DaPmPbnf+n9fQLxc5MTAH61eA57U8RNc=\""
+          "Value": "\"xJKaiOdeuN21Un38GM+nux43N3FeyCGksf7MCSlhbbg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 10:09:18 GMT"
+          "Value": "Thu, 05 Dec 2024 10:53:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1747,7 +1747,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zaF0exCT+A5DaPmPbnf+n9fQLxc5MTAH61eA57U8RNc="
+          "Value": "sha256-xJKaiOdeuN21Un38GM+nux43N3FeyCGksf7MCSlhbbg="
         }
       ]
     },
