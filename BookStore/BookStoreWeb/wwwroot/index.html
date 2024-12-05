@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+    <style>
+        td {
+            padding: 5px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Список книг</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <button id="sortByAuthor">Автор</button>
+                </th>
+                <th>
+                    <button id="sortByTitle">Название</button>
+                </th>
+                <th>
+                    <button id="sortByDate">Дата публицации</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="parent">
+        </tbody>
+    </table>
+
+    <script>
+        async function getBooks() {
+            const response = await fetch("/api/books", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const books = await response.json();
+                const rows = document.querySelector("tbody");
+                books.forEach(book => rows.append(row(book)));
+            }
+        }
+
+        async function getBooksByTitle() {
+            const response = await fetch("/api/booksTitle", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                removeAllChildren();
+                const books = await response.json();
+                const rows = document.querySelector("tbody");
+                books.forEach(book => rows.append(row(book)));
+            }
+        }
+
+        async function getBooksByAuthor() {
+            const response = await fetch("/api/booksAuthor", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                removeAllChildren();
+                const books = await response.json();
+                const rows = document.querySelector("tbody");
+                books.forEach(book => rows.append(row(book)));
+            }
+        }
+
+        async function getBooksByDate() {
+            const response = await fetch("/api/booksDate", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                removeAllChildren();
+                const books = await response.json();
+                const rows = document.querySelector("tbody");
+                books.forEach(book => rows.append(row(book)));
+            }
+        }
+        
+        async function buyBook(id) {
+            const response = await fetch(`/api/books/${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const book = await response.json();
+                document.querySelector(`tr[data-rowid='${book.id}']`).remove();
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+
+        function row(book) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", book.id);
+
+            const authorTd = document.createElement("td");
+            authorTd.append(book.author);
+            tr.append(authorTd);
+
+            const titleTd = document.createElement("td");
+            titleTd.append(book.title);
+            tr.append(titleTd);
+
+            const dateTd = document.createElement("td");
+            const dateParse = Date.parse(book.date);
+            const date = new Date(dateParse).toISOString().split('T')[0];
+            dateTd.append(date);
+            tr.append(dateTd);
+
+            const linksTd = document.createElement("td");
+
+            const buyLink = document.createElement("button");
+            buyLink.append("Купить");
+            buyLink.addEventListener("click", async () => await buyBook(book.id));
+
+            linksTd.append(buyLink);
+            tr.appendChild(linksTd);
+
+            return tr;
+        }
+
+        function removeAllChildren() {
+            const parentElement = document.getElementById('parent');
+            parentElement.innerHTML = '';
+        }
+
+        document.getElementById("sortByAuthor").addEventListener("click", () => getBooksByAuthor());
+        document.getElementById("sortByTitle").addEventListener("click", () => getBooksByTitle());
+        document.getElementById("sortByDate").addEventListener("click", () => getBooksByDate());
+
+        getBooks();
+    </script>
+</body>
+</html>
